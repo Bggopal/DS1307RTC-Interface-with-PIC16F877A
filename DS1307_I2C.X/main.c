@@ -40,7 +40,7 @@ int year = 21;
 #include "PIC_I2C.h" // Header for using I2C protocal
 #include "DS1307.h" //Header for using DS3231 RTC module
 
-void day_print(unsigned int);
+void day_print(int);
 
 
 int main()
@@ -116,7 +116,7 @@ while(1)
     return 0;
 }
 
-void day_print(unsigned int disp)
+void day_print(int disp)
 {
     Lcd_Clear();
     Lcd_Set_Cursor(1,1);
